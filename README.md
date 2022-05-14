@@ -17,13 +17,17 @@ Here's a simple example of how I run any code that I create.
 
 Create and enter a source code directory
 
-`rm -rf /src`
-`mkdir -p -m 777 /src`
-`cd /src`
+```
+rm -rf /src
+mkdir -p -m 777 /src
+cd /src
+```
 
 Retrieve the code from github.
-`git init`
-`git clone https://toddbenanze@github.com/toddbenanzer/vscode-docker-py.git`
+```
+git init
+git clone https://toddbenanze@github.com/toddbenanzer/vscode-docker-py.git
+```
 
 Build the docker container. The command builds the docker container, applying the label and the tag 'vscodepy'.
 `docker build --label vscodepy --tag vscodepy --file .devcontainer/Dockerfile /src`
